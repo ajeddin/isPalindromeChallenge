@@ -21,19 +21,28 @@ isPalindrom("racecar")
 // returns true
 */
 
-let word =  'Racecar';
-wordReversed = [];
+let word =  'hello';
 function isPalindrome(word){
+    wordReversed = [];
     for(i=0;i<word.length;i++){
-    wordReversed.unshift(word[i])
-}
-wordReversed = wordReversed.join('')
-console.log(wordReversed);
-if(word==wordReversed){
-    return true
-}else{
-    return false
-}
+        wordReversed.unshift(word[i])
+    }
+    wordReversed = wordReversed.join('')
+    console.log(wordReversed);
+    if(word==wordReversed){
+        return true
+    }else{
+        return false
+    }
 }
 console.log(isPalindrome(word))
 
+
+function isPalindromeReverse(word){
+    wordArray = word.split('')
+    wordArray= wordArray.reverse()
+    wordArray= wordArray.join('')
+    console.log(wordArray);
+    return (word===wordArray) ? true : false
+}
+console.log(isPalindromeReverse(word))
