@@ -46,3 +46,14 @@ function isPalindromeReverse(word){
     return (word===wordArray) ? true : false
 }
 console.log(isPalindromeReverse(word))
+
+
+
+
+function isPalindromeReverse2(word){
+    return word.split('').reverse().join('') === word
+}
+console.log(isPalindromeReverse2(word))
+
+const isPalin= (word) => {return word.split('').reverse().join('') === word}
+console.log(isPalin(word))
